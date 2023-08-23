@@ -9,10 +9,7 @@ input = list(input)
 output = open("output.txt", "w")
 
 nucleotides = ["a", "c", "g", "t"]
-text = ""
-
-for n in nucleotides:
-    text += str(input.count(n)) + " "
+text = " ".join([str(input.count(n)) for n in nucleotides])
 
 output.write(text)
 output.close()
