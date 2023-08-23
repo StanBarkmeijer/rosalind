@@ -36,3 +36,4 @@ for dna_string in input:
 
 print(sorted_dna_dict[0][0] + "\n" + str(sorted_dna_dict[0][1]["gc"]))
 output.write(sorted_dna_dict[0][0] + "\n" + str(sorted_dna_dict[0][1]["gc"]))
+output.close()

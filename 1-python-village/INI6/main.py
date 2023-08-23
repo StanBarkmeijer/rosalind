@@ -11,10 +11,7 @@ output = open('output.txt', 'w')
 word_count = {}
 
 for word in input:
-    if word in word_count:
-        word_count[word] += 1
-    else:
-        word_count[word] = 1
+    word_count[word] = word_count[word] + 1 if word in word_count else 1
 
 for word in word_count:
     output.write(word + ' ' + str(word_count[word]) + '\n')
